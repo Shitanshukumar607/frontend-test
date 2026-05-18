@@ -22,6 +22,12 @@ export default function Navbar() {
         >
           About
         </NavLink>
+        <NavLink 
+          to="/contact" 
+          className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+        >
+          Contact
+        </NavLink>
       </div>
     </nav>
   )

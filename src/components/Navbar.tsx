@@ -17,6 +17,12 @@ export default function Navbar() {
           Home
         </NavLink>
         <NavLink 
+          to="/products" 
+          className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+        >
+          Products
+        </NavLink>
+        <NavLink 
           to="/about" 
           className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
         >
